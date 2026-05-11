@@ -10,16 +10,40 @@
 # 元征相关网站不走代理
 DOMAIN-SUFFIX,qcar.x431.com
 
-# lark不走代理 - 核心域名
+# ============================================================
+#  Lark / 飞书国际版 不走代理
+# ============================================================
+
+# ----- 域名规则（浏览器版 Lark / API 调用 / 也兜底进程未识别的情况）-----
+
+# Lark 核心域名
 DOMAIN-SUFFIX,larksuite.com
 DOMAIN-SUFFIX,larksuitecdn.com
 DOMAIN-SUFFIX,lark.com
 DOMAIN-SUFFIX,larkoffice.com
 DOMAIN-SUFFIX,larkofficecdn.com
 
-# lark不走代理 - 后端依赖
+# ByteDance 海外基础设施（RTC 信令、推送、CDN）
 DOMAIN-SUFFIX,bytertc.com
 DOMAIN-SUFFIX,byteoversea.com
 DOMAIN-SUFFIX,byteoversea.net
 DOMAIN-SUFFIX,volcvideo.com
 DOMAIN-SUFFIX,volcvoice.com
+
+# ----- 进程规则（Mihomo TUN 模式生效，含 UDP/RTC 通话流量）-----
+# 注：mihomo 在 Windows 上 PROCESS-NAME 不区分大小写，macOS 区分大小写
+# 列双份（带/不带 .exe）以同时覆盖 macOS 和 Windows
+
+# macOS 进程名
+PROCESS-NAME,Lark
+PROCESS-NAME,Lark Helper
+PROCESS-NAME,Lark Helper (GPU)
+PROCESS-NAME,Lark Helper (Renderer)
+PROCESS-NAME,Lark Helper (Plugin)
+
+# Windows 进程名
+PROCESS-NAME,Lark.exe
+PROCESS-NAME,Lark Helper.exe
+PROCESS-NAME,Lark Helper (GPU).exe
+PROCESS-NAME,Lark Helper (Renderer).exe
+PROCESS-NAME,Lark Helper (Plugin).exe
