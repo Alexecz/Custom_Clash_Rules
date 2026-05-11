@@ -9,3 +9,17 @@
 
 # 元征相关网站不走代理
 DOMAIN-SUFFIX,qcar.x431.com
+
+# lark不走代理 - 核心域名
+DOMAIN-SUFFIX,larksuite.com
+DOMAIN-SUFFIX,larksuitecdn.com
+DOMAIN-SUFFIX,lark.com
+DOMAIN-SUFFIX,larkoffice.com
+DOMAIN-SUFFIX,larkofficecdn.com
+
+# lark不走代理 - 后端依赖
+DOMAIN-SUFFIX,bytertc.com
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,byteoversea.net
+DOMAIN-SUFFIX,volcvideo.com
+DOMAIN-SUFFIX,volcvoice.com
