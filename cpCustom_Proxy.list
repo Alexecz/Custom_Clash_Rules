@@ -1,1 +1,9 @@
 DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,googleapis.com
+
+DOMAIN-SUFFIX,googlesyndication.com
+DOMAIN-SUFFIX,googleadservices.com
+DOMAIN-SUFFIX,googletagmanager.com
+DOMAIN-SUFFIX,googletagservices.com
+DOMAIN-SUFFIX,doubleclick.net
+DOMAIN-SUFFIX,google-analytics.com
