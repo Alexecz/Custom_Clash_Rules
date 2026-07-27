@@ -1,12 +1,16 @@
- # 邮箱不走代理
+# Zoho 邮件客户端协议直连（不包含网页版 mail.zoho.*）
 DOMAIN,smtp.zoho.com
 DOMAIN,smtppro.zoho.com
 DOMAIN,pop.zoho.com
 DOMAIN,poppro.zoho.com
 DOMAIN,imap.zoho.com
 DOMAIN,imappro.zoho.com
-DOMAIN-SUFFIX,zoho.com
-DOMAIN-SUFFIX,zohocdn.com
+DOMAIN,smtp.zoho.com.au
+DOMAIN,smtppro.zoho.com.au
+DOMAIN,pop.zoho.com.au
+DOMAIN,poppro.zoho.com.au
+DOMAIN,imap.zoho.com.au
+DOMAIN,imappro.zoho.com.au
 
 # 元征相关网站不走代理
 DOMAIN-SUFFIX,qcar.x431.com
