@@ -28,13 +28,6 @@ DOMAIN-SUFFIX,lark.com
 DOMAIN-SUFFIX,larkoffice.com
 DOMAIN-SUFFIX,larkofficecdn.com
 
-# ByteDance 海外基础设施（RTC 信令、推送、CDN）
-DOMAIN-SUFFIX,bytertc.com
-DOMAIN-SUFFIX,byteoversea.com
-DOMAIN-SUFFIX,byteoversea.net
-DOMAIN-SUFFIX,volcvideo.com
-DOMAIN-SUFFIX,volcvoice.com
-
 # ----- 进程规则（Mihomo TUN 模式生效，含 UDP/RTC 通话流量）-----
 # 注：mihomo 在 Windows 上 PROCESS-NAME 不区分大小写，macOS 区分大小写
 # 列双份（带/不带 .exe）以同时覆盖 macOS 和 Windows
