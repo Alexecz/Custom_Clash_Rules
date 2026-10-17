@@ -28,6 +28,97 @@ DOMAIN-SUFFIX,lark.com
 DOMAIN-SUFFIX,larkoffice.com
 DOMAIN-SUFFIX,larkofficecdn.com
 
+# 以下来源：Lark 官方「配置企业内网防火墙域名和 IP 白名单」(hc/zh-CN/articles/360044784554)
+# 同步日期：2026-10-17（文档最新一次更新为 2026-10-08）
+
+# 客户端域名白名单
+DOMAIN-SUFFIX,ibytedtos.com
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,larksuitepkg.com
+DOMAIN-SUFFIX,zijieapi.com
+DOMAIN-SUFFIX,volcvideos.com
+DOMAIN-SUFFIX,bytevcloud.com
+DOMAIN-SUFFIX,baseopendevx.com
+DOMAIN-SUFFIX,byteintlapi.com
+DOMAIN-SUFFIX,larkenterprise.com
+
+# 视频会议 信令服务（TLS 443）
+DOMAIN-SUFFIX,larksuite-us.com
+DOMAIN-SUFFIX,rtcplus.com
+DOMAIN-SUFFIX,rtc-us-ttp.com
+
+# 视频会议 特效功能
+DOMAIN,effect.snssdk.com
+DOMAIN-SUFFIX,byteeffecttos.com
+
+# ----- 视频会议 媒体服务 IP（UDP 50000-50100/80/443，TCP 80/443，双向）-----
+# 已剔除 2025-03-31 裁撤：199.182.236.0/24、23.251.115.0/24、23.90.170.0/24
+
+# 前期已配置
+IP-CIDR,3.7.25.128/25,no-resolve
+IP-CIDR,3.101.32.0/25,no-resolve
+IP-CIDR,3.235.69.128/25,no-resolve
+IP-CIDR,15.185.155.0/25,no-resolve
+IP-CIDR,3.127.194.0/25,no-resolve
+IP-CIDR,3.64.95.128/25,no-resolve
+IP-CIDR,207.211.211.0/24,no-resolve
+IP-CIDR,23.236.112.0/24,no-resolve
+IP-CIDR,18.180.159.0/25,no-resolve
+IP-CIDR,15.228.62.128/25,no-resolve
+IP-CIDR,108.137.28.0/25,no-resolve
+IP-CIDR,34.92.178.0/24,no-resolve
+IP-CIDR,156.59.196.0/24,no-resolve
+IP-CIDR,207.211.208.0/24,no-resolve
+IP-CIDR,103.155.16.0/24,no-resolve
+IP-CIDR,18.141.149.128/25,no-resolve
+IP-CIDR,13.214.1.128/25,no-resolve
+IP-CIDR,128.14.110.0/24,no-resolve
+IP-CIDR,104.166.159.0/24,no-resolve
+
+# 2023-12-15 新增
+IP-CIDR,23.251.117.0/24,no-resolve
+IP-CIDR,98.96.213.0/24,no-resolve
+IP-CIDR,128.14.115.0/24,no-resolve
+IP-CIDR,192.254.88.0/24,no-resolve
+IP-CIDR,129.227.200.0/24,no-resolve
+IP-CIDR,156.59.27.0/24,no-resolve
+IP-CIDR,129.227.9.0/24,no-resolve
+IP-CIDR,38.54.73.0/24,no-resolve
+IP-CIDR,156.146.44.0/24,no-resolve
+IP-CIDR,103.189.255.0/24,no-resolve
+IP-CIDR,154.85.90.0/24,no-resolve
+IP-CIDR,98.98.121.0/24,no-resolve
+
+# 2025-07-01 新增（71.18.101.0/24 已被下方 71.18.0.0/16 覆盖）
+IP-CIDR,154.92.25.0/24,no-resolve
+IP-CIDR,46.151.193.0/24,no-resolve
+IP-CIDR,104.166.146.0/24,no-resolve
+IP-CIDR,185.24.10.0/24,no-resolve
+IP-CIDR,156.59.201.0/24,no-resolve
+IP-CIDR,156.59.234.0/24,no-resolve
+IP-CIDR,129.227.231.0/24,no-resolve
+IP-CIDR,156.59.94.0/24,no-resolve
+IP-CIDR,156.59.78.0/24,no-resolve
+IP-CIDR,109.61.91.0/24,no-resolve
+IP-CIDR,84.17.44.0/24,no-resolve
+IP-CIDR,154.93.68.0/24,no-resolve
+IP-CIDR,98.98.3.0/24,no-resolve
+IP-CIDR,101.47.83.0/24,no-resolve
+
+# 2025-11-12 新增
+IP-CIDR,71.18.0.0/16,no-resolve
+
+# 2026-10-08 新增
+IP-CIDR,156.59.38.0/24,no-resolve
+IP-CIDR,104.66.223.0/24,no-resolve
+IP-CIDR,104.111.63.0/24,no-resolve
+IP-CIDR,104.64.63.0/24,no-resolve
+IP-CIDR,45.79.234.0/24,no-resolve
+IP-CIDR,128.128.92.0/24,no-resolve
+IP-CIDR,172.236.68.0/24,no-resolve
+IP-CIDR,172.237.192.0/24,no-resolve
+IP-CIDR,104.105.94.0/24,no-resolve
+
 # ----- 进程规则（Mihomo TUN 模式生效，含 UDP/RTC 通话流量）-----
 # 注：mihomo 在 Windows 上 PROCESS-NAME 不区分大小写，macOS 区分大小写
 # 列双份（带/不带 .exe）以同时覆盖 macOS 和 Windows
